@@ -9,7 +9,7 @@ import { siteConfig } from '@/site.config'
         <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer" class="link">
           CC BY-NC-SA 4.0
         </a>
-        2023-PRESENT © {{ siteConfig.author }}
+        {{ new Date().getFullYear() }}-PRESENT © {{ siteConfig.author }}
       </span>
     </div>
   </footer>

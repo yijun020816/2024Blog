@@ -41,7 +41,6 @@ function toggleViewTransition(event: MouseEvent) {
 }
 
 function toogleTheme(event: MouseEvent) {
-  // @ts-expect-error: Transition API
   const isSupport = document.startViewTransition
     && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
