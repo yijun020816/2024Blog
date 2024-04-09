@@ -14,6 +14,7 @@ const getTagIcon = (title: string) => {
     node: 'icon-node',
     vscode: 'icon-vscode',
     vue: 'icon-Vue',
+    转载: 'icon-blogger',
   }
   // 将title转小写
   title = title.toLowerCase()
