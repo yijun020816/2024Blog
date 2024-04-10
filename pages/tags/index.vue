@@ -3,9 +3,21 @@ const contentQuery = await queryContent().find()
 // 获取tag图标
 const getTagIcon = (title: string) => {
   const obj = {
-    Nuxt3: 'icon-nuxt',
-    Vue: 'icon-Vue',
+    nuxt3: 'icon-nuxt',
+    css: 'icon-css',
+    html: 'icon-html',
+    uniapp: 'icon-uniapp',
+    javascript: 'icon-JavaScript',
+    git: 'icon-git',
+    code: 'icon-code',
+    typescript: 'icon-typescript',
+    node: 'icon-node',
+    vscode: 'icon-vscode',
+    vue: 'icon-Vue',
+    转载: 'icon-blogger',
   }
+  // 将title转小写
+  title = title.toLowerCase()
   if (!obj[title as keyof typeof obj])
     return `<span class="hover">#${title}</span>`
   else
