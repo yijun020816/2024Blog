@@ -4,6 +4,7 @@ const contentQuery = await queryContent().find()
 const getTagIcon = (title: string) => {
   const obj = {
     Nuxt3: 'icon-nuxt',
+    Vue: 'icon-Vue',
   }
   if (!obj[title as keyof typeof obj])
     return `<span class="hover">#${title}</span>`
