@@ -40,6 +40,18 @@ export default defineNuxtConfig({
       bodyAttrs: {
         class: 'font-sans',
       },
+      script: [
+        {
+          src: 'https://sdk.51.la/js-sdk-pro.min.js',
+          id: 'LA_COLLECT',
+          type: 'text/javascript',
+        },
+        {
+          innerHTML: `
+          LA.init({id:"3I6Hx8rqbv1QDb6d",ck:"3I6Hx8rqbv1QDb6d",autoTrack:true,hashMode:true})
+          `,
+        },
+      ],
     },
   },
 
