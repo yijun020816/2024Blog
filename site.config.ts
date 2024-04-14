@@ -26,11 +26,11 @@ export const navLinks = [
     path: '/blog',
     icon: 'i-icon-park-outline-align-text-right-one',
   },
-  // {
-  //   title: 'Projects',
-  //   path: '/projects',
-  //   icon: 'i-icon-park-outline-blocks-and-arrows',
-  // },
+  {
+    title: 'Projects',
+    path: '/projects',
+    icon: 'i-icon-park-outline-blocks-and-arrows',
+  },
   {
     title: 'Tags',
     path: '/tags',
@@ -77,30 +77,27 @@ export const projectList = [
     name: 'Projects',
     content: [
       {
-        name: 'Nuxt Blog',
-        desc: 'My blog site, base on Nuxt',
-        path: 'https://github.com/chansee97/nuxt-blog',
+        name: 'My Blog',
+        desc: '本人博客项目，已开源(基于 Nuxt3)',
+        path: 'http://yijun.fun',
+        githubPath: 'https://github.com/yijun020816/2024Blog.git',
       },
       {
-        name: 'Nova Admin',
-        desc: 'a complete admin template',
-        path: 'https://github.com/chansee97/nova-admin',
-      },
-      {
-        name: 'Nova Admin Nest',
-        desc: 'The nest backend for nova admin',
-        path: 'https://github.com/chansee97/nove-admin-nest',
+        name: 'Service服务',
+        desc: '一个 稳定、快速、好用的 API 接口服务(基于 Nuxt3)',
+        path: 'https://service.yijun.fun/',
+        githubPath: 'https://github.com/yijun020816/api-service',
       },
     ],
   },
-  {
-    name: 'Starter',
-    content: [
-      {
-        name: 'Virtuoso',
-        desc: 'My simply vue starter',
-        path: 'https://github.com/chansee97/virtuoso',
-      },
-    ],
-  },
+  // {
+  //   name: 'Starter',
+  //   content: [
+  //     {
+  //       name: 'Virtuoso',
+  //       desc: 'My simply vue starter',
+  //       path: 'https://github.com/chansee97/virtuoso',
+  //     },
+  //   ],
+  // },
 ]
