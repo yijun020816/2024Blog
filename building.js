@@ -22,7 +22,7 @@ function prerenderRoutes() { // 预渲染路由 加快访问速度
       })
     }
   })
-  routes = ['/', '/search', '/tags', '/blog', ...routes]
+  routes = ['/', '/search', '/tags', '/blog', '/projects', ...routes]
   fs.writeFileSync('./prerenderRoutes.json', JSON.stringify(routes))
 }
 
