@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { siteConfig } from './site.config'
+import prerenderRoutes from './prerenderRoutes.json'
 
 export default defineNuxtConfig({
   modules: [
@@ -11,6 +12,11 @@ export default defineNuxtConfig({
   devServer: {
     host: '0.0.0.0',
     port: 3001,
+  },
+  nitro: {
+    prerender: {
+      routes: prerenderRoutes,
+    },
   },
   app: {
     rootId: 'nuxt-root',

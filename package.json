@@ -1,13 +1,15 @@
 {
   "name": "nuxt-app",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "node ./building.js && nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint . --fix",
+    "testBuild":"node ./building.js",
     "stylelint:fix": "npx stylelint **/*.{css,scss,vue,less,html} --fix"
   },
   "dependencies": {
